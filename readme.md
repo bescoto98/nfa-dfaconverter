@@ -14,32 +14,6 @@ Assignment specifications called for a program written in C++ or Java that would
 4. This line would have the set of accept states.
 5. This line would continue to the end of the file, and define the transition function.
 
-This is the correct format of an input file:
-
-`{1}	{2}	{3}
-a	b
-{2}
-{3}
-{1}, a  = {3}
-{1}, b  = {2}
-{2}, a = {1}
-{2}, a = {2}
-{2}, EPS = {3}
-{3}, b = {1}
-`
-EPS denotes an epsilon transition.
-
-And this is the format of an output file:
-`{1}  {3} {2,3}
-a b
-{2,3}
-{3} {2,3}
-{1},a={3}
-{1},b={2,3}
-{3},b={1}
-{2,3},a={1,2,3}`
-
-
 Resources:
 - https://www.geeksforgeeks.org/power-set/
 > In order to generate the power set I did some research about the different ways it could be done. Eventually, I settled on the geeksforgeeks method linked, looking up how the binary counter worked, and how this method was able to produce the correct results.
