@@ -1,8 +1,8 @@
-//Brenda Escoto
-//2281135
-//escot105@mail.chapman.edu
-//CPSC 406-01
-//Assignment 1
+/**
+Brenda Escoto
+escot105@mail.chapman.edu
+February 26, 2019
+**/
 
 #include <stdio.h>
 #include <iostream>
